@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 ARG OverlayVersion="1.22.1.0"
-ARG HostArchitecture="armhf"
+ARG HostArchitecture="amd64"
 ADD https://github.com/just-containers/s6-overlay/releases/download/v${OverlayVersion}/s6-overlay-${HostArchitecture}.tar.gz /tmp/
 
 RUN \
